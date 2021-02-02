@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './App.css';
-import {ButtonInc} from './ButtonInc';
-import {ButtonReset} from './ButtonReset';
-import {Display} from "./Display";
+import {ButtonInc} from './Components/Buttons/ButtonInc';
+import {ButtonReset} from './Components/Buttons/ButtonReset';
+import {Display} from "./Components/Display/Display";
 
 
 function App() {
