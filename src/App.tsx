@@ -17,6 +17,7 @@ function App() {
 
     return (
         <div>
+            <div>Hello!!!</div>
             <Display number={display}/>
             <ButtonInc addDisplay={addDisplay}/>
             <ButtonReset resetDisplay={resetDisplay}/>
