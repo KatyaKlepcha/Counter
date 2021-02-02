@@ -5,7 +5,7 @@ type ButtonResetType = {
 export function ButtonReset(props: ButtonResetType) {
     return (
         <div>
-            <button onClick={props.resetDisplay}>Reset</button>
+            <button onClick={props.resetDisplay} className={'button'}>Reset</button>
         </div>
     )
 }

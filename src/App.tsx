@@ -16,11 +16,14 @@ function App() {
 
 
     return (
-        <div>
-            <div>Hello!!!</div>
-            <Display number={display}/>
-            <ButtonInc addDisplay={addDisplay}/>
-            <ButtonReset resetDisplay={resetDisplay}/>
+        <div className={'main'}>
+            <div className={'display'}>
+                <Display number={display}/>
+            </div>
+            <div className={'buttons'}>
+                <ButtonInc addDisplay={addDisplay}/>
+                <ButtonReset resetDisplay={resetDisplay}/>
+            </div>
         </div>
     )
 }
