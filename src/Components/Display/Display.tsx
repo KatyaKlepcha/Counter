@@ -5,7 +5,7 @@ type DisplayType = {
 export function Display(props: DisplayType) {
 
     return (
-        <div className={props.number ===5 ? 'red' : ''}>{props.number}</div>
+        <div className={props.number ===5 ? 'error' : ''}>{props.number}</div>
     )
 }
 

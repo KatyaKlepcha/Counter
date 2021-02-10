@@ -2,7 +2,9 @@ import React, {useState} from 'react';
 import './App.css';
 import {ButtonInc} from './Components/Buttons/ButtonInc';
 import {ButtonReset} from './Components/Buttons/ButtonReset';
+import {ButtonSet} from './Components/Buttons/ButtonSet';
 import {Display} from "./Components/Display/Display";
+import {Settings} from './Components/Settings/Settings';
 
 
 function App() {
@@ -17,12 +19,22 @@ function App() {
 
     return (
         <div className={'main'}>
-            <div className={'display'}>
-                <Display number={display}/>
+            <div className={'set-wrapper'}>
+                <div className={'settingsDisplay'}>
+                    <Settings/>
+                </div>
+                <div className={'buttons'}>
+                    <ButtonSet/>
+                </div>
             </div>
-            <div className={'buttons'}>
-                <ButtonInc addDisplay={addDisplay}/>
-                <ButtonReset resetDisplay={resetDisplay}/>
+            <div className={'wrapper'}>
+                <div className={'display'}>
+                    <Display number={display}/>
+                </div>
+                <div className={'buttons'}>
+                    <ButtonInc addDisplay={addDisplay} disabled={display === 5}/>
+                    <ButtonReset resetDisplay={resetDisplay}/>
+                </div>
             </div>
         </div>
     )
