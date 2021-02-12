@@ -1,83 +1,18 @@
-/*.main {*/
-/*    width: 200px;*/
-/*    height: 300px;*/
-/*    margin: 0 auto;*/
-/*    border: 2px solid saddlebrown;*/
-/*    background-color: navajowhite;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
 
-/*.display {*/
-/*    background-color: burlywood;*/
-/*    width: 80%;*/
-/*    border: 2px solid saddlebrown;*/
-/*    margin: 10px;*/
-/*    font-size: 40px;*/
-/*    text-align: center;*/
-/*    color: #8b4513;*/
-/*}*/
-
-/*.buttons {*/
-/*    display: flex;*/
-/*    color: saddlebrown;*/
-/*    border: 2px solid saddlebrown;*/
-/*    width: 80%;*/
-/*    margin: 20px;*/
-/*    justify-content: space-around;*/
-/*    font-size: 40px;*/
-/*}*/
-
-/*.button {*/
-/*    font-size: 25px;*/
-/*    color: saddlebrown;*/
-/*    background-color: burlywood;*/
-/*    border-color: saddlebrown;*/
-/*    margin: 10px;*/
-/*}*/
-
-
-/*.error {*/
-/*    color: red;*/
-/*    background-color: burlywood;*/
-/*    font-weight: bolder;*/
-/*    font-size: 45px;*/
-
-/*}*/
-
-/*button:disabled,*/
-/*button[disabled] {*/
-/*    border: 1px solid saddlebrown;*/
-/*    background-color: navajowhite;*/
-/*    color: saddlebrown;*/
-/*}*/
 .main {
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-around;
-    width: 1000px;
     height: 100vh;
 
 }
-.set-wrapper {
+.set-wrapper, .wrapper {
     border: 2px solid saddlebrown;
     background-color: navajowhite;
-    width: 30%;
-    height: 70%;
+    width: 300px;
+    padding: 20px;
     display: flex;
-    align-items:  center;
-
-}
-.wrapper {
-    border: 2px solid saddlebrown;
-    background-color: navajowhite;
-    width: 30%;
-    height: 70%;
-    display: flex;
-    align-items:  center;
+    flex-direction: column;
 }
 
 .display {
@@ -85,7 +20,24 @@
 }
 .settingsDisplay {
     border: 2px solid saddlebrown;
+    margin-bottom: 20px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px;
 }
 .buttons {
     border: 2px solid saddlebrown;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.area {
+    display: flex;
+    justify-content: space-between;
+
+
 }

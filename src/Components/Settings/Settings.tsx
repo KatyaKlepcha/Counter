@@ -2,12 +2,12 @@ export function Settings() {
 
     return (
         <div>
-            <div>
-                max value
+            <div className={'area'}>
+                <span>max value</span>
                 <input type={'number'}/>
             </div>
-            <div>
-                start value
+            <div className={'area'}>
+                <span>start value</span>
                 <input type={'number'}/>
             </div>
         </div>
